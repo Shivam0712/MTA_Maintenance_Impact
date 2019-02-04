@@ -10,10 +10,15 @@ MTA has to carry out periodical maintenance which causes a complete or partial s
 4.  If the answer to 3 is yes, how to quantify the increase in customer demand?
 
 ## Datasets:
-MTA Turnstile Data: The data shows the entry/exit register values for all turnstiles at all subway stations for any given date.
+1. MTA Turnstile Data: The data shows the entry/exit register values for all turnstiles at all subway stations for any given date.
+
 Url : http://web.mta.info/developers/turnstile.html
-TLC Trip Data: The yellow and green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts.
+  
+2. TLC Trip Data: The yellow and green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off  locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts.
+
 Url: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
-My MTA Alert: My MTA Alert carries the information regarding the scheduled maintenance carried out by the Metropolitan Transportation Authority (MTA) for NYC Subway Stations.
+
+3. My MTA Alert: My MTA Alert carries the information regarding the scheduled maintenance carried out by the Metropolitan Transportation Authority (MTA) for NYC Subway Stations.
+
 Url: https://www.mymtaalerts.com/messagearchive.aspx
 
