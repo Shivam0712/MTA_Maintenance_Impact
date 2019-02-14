@@ -49,7 +49,7 @@ In essence, the MTA subway system is a network in which stations are nodes which
 ### Modelling the Data
 The ridership of a subway system can be considered as function of trend and periodicity, regular features, and maintenance features.
 
-$$Ridership = f(Trend,Periodicity) + f(Regular Features) + f(Maintenance Features)$$
+'''Ridership = f(Trend,Periodicity) + f(Regular Features) + f(Maintenance Features)'''
 
 By standardizing the ridership data with moving mean and standard deviation we have already removed trend and periodicity. Thus,
 
