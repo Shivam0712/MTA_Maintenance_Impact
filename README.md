@@ -48,14 +48,16 @@ In essence, the MTA subway system is a network in which stations are nodes which
 
 ### Modelling the Data
 The ridership of a subway system can be considered as function of trend and periodicity, regular features, and maintenance features.
-$$Ridership = f(Trend,Periodicity) + f(Regular Features) + f(Maintenance Features)$$
-By standardizing the ridership data with moving mean and standard deviation we have already removed trend and periodicity. Thus,
-Standardized z-score = f(Regular Features) + f(Maintenance Features)
-Now, a possible method to calculate impact of maintenance is to learn the normal behavior of ridership through regular day data points and use its prediction for maintenance days as counterfact. But as we do not know all the features which affect the normal behavior of subway ridership, this will be difficult for us to perform. Another method can be to pick a mixed sample of regular and maintenance days, and then using the maintenance feature attempt to explain maximum variation in the standardized z-score without overfitting. For a regular day data point, the impact of maintenance features will be 0. Thus,
-Standardized z-score = f(Regular Features)
-This is shown in the figure 5 by the distribution  colored in blue. This distribution has mean ~0 and shape almost similar to random distribution. As we know, the residual of  a ML model is randomly distributed, if we subtract the modelled variation using maintenance features from standardized z-score, we will get a random distribution which will be similar to the distribution of  z-score on regular days. Thus, we can use this modelled variation as the impact of maintenance on subway ridership.
-This can also be understood using figure 5 and table 1, as the distribution is almost normal with mean 0 on regular days(blue distribution) which is pulled down to negative on maintenance days. Using the maintenance feature we are trying to model this effect by which the scores are pulled down and use it as impact of maintenance on ridership.
 
+$$Ridership = f(Trend,Periodicity) + f(Regular Features) + f(Maintenance Features)$$
+
+By standardizing the ridership data with moving mean and standard deviation we have already removed trend and periodicity. Thus,
+
+$$Standardized z-score = f(Regular Features) + f(Maintenance Features)
+
+For a regular day data point, the impact of maintenance features will be 0. This is shown in the figure 5 by the distribution  colored in blue. This distribution has mean ~0 and shape almost similar to normal distribution.
+
+Thus our modelling objective is to model the maximum possible variation in the z-score using only maintenance features without overfitting. This modelled variation can be used as the impact of maintenance on subway ridership.
 
 ## Results
 
