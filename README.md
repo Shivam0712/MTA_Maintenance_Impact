@@ -26,8 +26,9 @@ Url: https://www.mymtaalerts.com/messagearchive.aspx
 **4. TLC Trip Data:** The yellow and green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off  locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts.
 Url: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
 
-
-## 
-
 ## Methodology:
 
+### Approach:
+1. The data points in our final processed data are station & dates combination with  we have
+1. Any given maintenance activity impacts a group of stations on its scheduled dates; we can comprehend this impact as the decrease in ridership for the stations from the regular. 
+2. The apt way is to take the sample of days when maintenance activity was conducted and compare its distribution of ridership with days when maintenance was not present. If ridership in our maintenance sample is significantly lower than the regular days then, we can confirm our hypothesis that maintenance does affect ridership. Before conducting a test like this, we need to overcome the primary challenges presented by the subway ridership data. First, if we pick a station at a time; it will have very few weekends with scheduled maintenance thus, resulting in a small and biased sample. Second, if we combine maintenance samples from all the stations, then we need to standardize them using stations statistics to make all the samples comparable. Third, the turnstile data is not stationary as it is a time series data, and has trend and seasonal variation; thus, standardization needs to be done using moving means and standard deviations.
