@@ -30,9 +30,16 @@ Url: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
 
 The data points in our final processed data are station & dates combination with the maintenance features. Any given maintenance activity impacts a group of stations on its scheduled dates; we can comprehend this impact as the decrease in ridership for the stations from the regular. The apt way to do this is to take the sample of days when maintenance activity was conducted and compare its distribution of ridership with days when maintenance was not present. If ridership in our maintenance sample is significantly lower than the regular days then, we can confirm our hypothesis that maintenance does affect ridership.
 
-### 1. Non-Uniformity and Non-Stationarity in Data
-
+### Non-Uniformity and Non-Stationarity in Data
+Essentially, as we are trying to study the impact in 106 stations on F, N and R lines, and these stations have different ridership behavior on Saturdays and Sundays, we have 212 time series in our data.
 1. Data points comes from different stations which have different average ridership. Thus, all data points are not uniformly comparable.
 2. Data points comes from different periods of time which may not be stationary.
+To overcome these challenges we standardize the data by deducting the rolling mean and diviing by the rolling standard deviation.
+We conduct the Augmented Dickey-Fuller test which is a standard method to test the stationarity in time series data, on all the time series before and after the above standardization.
 
-To overcome these challenges we normalize the data with 
+### Visual comparison of ridership on maintenance days and regular days
+
+### Impact of maintenance on network of stations
+In essence, the MTA subway system is a network in which stations are nodes which connects to other nodes through subway lines which are the edges in the network. A maintenance activity impacts the ridership of a station by suspending its edges with other stations thus in turn impacting its connectivity with the network. The more the edges of a node are perturbed, the severe will be the impact. The stations which are in the middle of these sections lose more riders in comparison to those at the corners. Rather the riders of the intermediate stations, access the corner stations on maintenance day to avail the subway service. Thus, these corner stations although having maintenance, experience the normal or in some cases increased ridership. Therefore, the maintenance sample has further bifurcations as, station date combinations with general maintenance, and station date combinations with maintenance and entry gain(corner nodes).
+
+## Independent samples T-test to compare different samples
