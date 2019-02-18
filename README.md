@@ -54,12 +54,12 @@ In essence, the MTA subway system is a network in which stations are nodes which
 ### Modelling the Data
 The ridership of a subway system can be considered as function of trend and periodicity, regular features, and maintenance features.
 
-$$ 
-Ridership = f(Trend,Periodicity) + f(Regular Features) + f(Maintenance Features)
-$$
+ 
+**Ridership = f(Trend,Periodicity) + f(Regular Features) + f(Maintenance Features)**
+
 By standardizing the ridership data with moving mean and standard deviation we have already removed trend and periodicity. Thus,
 
-$$Standardized z-score = f(Regular Features) + f(Maintenance Features)
+**Standardized z-score = f(Regular Features) + f(Maintenance Features)**
 
 For a regular day data point, the impact of maintenance features will be 0. This is shown in the figure 5 by the distribution  colored in blue. This distribution has mean ~0 and shape almost similar to normal distribution.
 
