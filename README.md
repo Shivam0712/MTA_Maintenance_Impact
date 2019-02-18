@@ -73,12 +73,15 @@ We use tree based decision models here:
 
 ## Results
 **1. Overall in October 2017 to September 2018, there was a total loss of 1.45 Million riders on F, N and R lines just for the maintenance that occured on weekends.**
+
 <img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset10.PNG" align="center" border="1"/>
 
 **2. Signal and Track maintenance are the leading cause of ridership losses.**
+
 <img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset5.PNG" align="center" border="1"/>
 
-**3. On F line Signal is the Major problem, whereas on N & R lines Track is the major problem.
+**3. On F line Signal is the Major problem, whereas on N & R lines Track is the major problem.**
+
 <img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset6.PNG" align="center" border="1"/>
 
 ## Conclusion and Future Work:
