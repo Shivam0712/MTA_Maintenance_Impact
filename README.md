@@ -44,7 +44,7 @@ We conduct the Augmented Dickey-Fuller test which is a standard method to test t
 
 ### Impact of maintenance on network of stations
 In essence, the MTA subway system is a network in which stations are nodes which connects to other nodes through subway lines which are the edges in the network. A maintenance activity impacts the ridership of a station by suspending its edges with other stations thus in turn impacting its connectivity with the network. The more the edges of a node are perturbed, the severe will be the impact. The stations which are in the middle of these sections lose more riders in comparison to those at the corners. Rather the riders of the intermediate stations, access the corner stations on maintenance day to avail the subway service. Thus, these corner stations although having maintenance, experience the normal or in some cases increased ridership. Therefore, the maintenance sample has further bifurcations as, station date combinations with general maintenance, and station date combinations with maintenance and entry gain(corner nodes).
-<img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset7.JPG" align="center" border="1"/>
+<img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset7.jpg" align="center" border="1"/>
 
 
 ### Independent samples T-test to compare different samples
