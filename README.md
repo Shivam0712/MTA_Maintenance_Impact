@@ -87,10 +87,19 @@ We use tree based decision models here:
 
 ## Conclusion and Future Work:
 
-Currently this analysis was restricted in different sense:
-1. Analysis was only done on 3 Lines; NYC MTA Subway has total 23 operational lines.
-2. Only scheduled maintenance for weekends were considered. Weekday maintenance and delay in service are still to be analyzed.
-3. Loss of riders are only analyzed at point of entry.
 
 Further, this we also need to take into account the taxi ridership data and relate it with the maintenance activities of MTA Subway.
 
+## Conclusion:
+From this study we are able to conclude with statistical significance that the scheduled maintenance activities in MTA subway system negatively impacts the ridership. We also uncovered that the maintenance activities affect ridership by impacting the underlying network connections of stations. Stations at the corner of sections where maintenance is conducted show normal or increased ridership on maintenance days. We were able to establish a method through which this loss in ridership can be quantified and found that the loss of ridership was about 1.45 Million riders in the given time frame. Maintenance activities related to signals on F line and related to tracks on N and R lines are sternly leading to loss in riderships. 
+
+## Limitations & Future Works:
+Currently this analysis has many limitations:
+1. Analysis was only done on 3 Lines; NYC MTA Subway has total 23 operational lines.
+2. Only scheduled maintenance for weekends were considered. Weekday maintenance and delay in service are still to be analyzed.
+3. We have analyzed only the impact on ridership which originates at affected stations.(only Checkin's)
+4. For maintenance data, we have used the self processed publicly available text data. Use of GTFS-Realtime data here will enable us to further improve our analysis.
+5. For the network connections, currently we were able to create only the binary features i.e., presence or absence of an edge. With more sophisticated data such as of GTFS-Realtime, we will be able to add weights to these edges too.
+6. Lastly, we do not take into account the shifting of ridership to other lines as we focus our analysis on F,N,R lines. 
+
+Future works would be first to quantify the surge in taxi ridership during subway maintenance. Second, to scale this analysis for all subway stations. Third, to incorporate GTFS-realtime data and enrich the network features and ultimately use this new data source to extend the study and include subway delay too. 
