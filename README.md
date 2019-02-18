@@ -49,6 +49,10 @@ In essence, the MTA subway system is a network in which stations are nodes which
 
 ### Independent samples T-test to compare different samples
 <img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset4.PNG" align="center" border="1"/>
+
+<img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset9.PNG" align="center" border="1"/>
+
+From the results of independent samples T-test we can see, indeed sample with maintenance and without maintenance are significantly different, and sample with maintenance & entry gain is not significantly different from without maintenance.
 ### Quantifying the loss in ridership due to maintenance activities:
 
 ### Modelling the Data
@@ -64,9 +68,25 @@ By standardizing the ridership data with moving mean and standard deviation we h
 For a regular day data point, the impact of maintenance features will be 0. This is shown in the figure 5 by the distribution  colored in blue. This distribution has mean ~0 and shape almost similar to normal distribution.
 
 Thus our modelling objective is to model the maximum possible variation in the z-score using only maintenance features without overfitting. This modelled variation can be used as the impact of maintenance on subway ridership.
+We use tree based decision models here:
+<img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset7.PNG" align="center" border="1"/>
 
 ## Results
+**1. Overall in October 2017 to September 2018, there was a total loss of 1.45 Million riders on F, N and R lines just for the maintenance that occured on weekends.**
+<img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset10.PNG" align="center" border="1"/>
+
+**2. Signal and Track maintenance are the leading cause of ridership losses.**
 <img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset5.PNG" align="center" border="1"/>
+
+**3. On F line Signal is the Major problem, whereas on N & R lines Track is the major problem.
 <img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset6.PNG" align="center" border="1"/>
-## Future Works
+
+## Conclusion and Future Work:
+
+Currently this analysis was restricted in different sense:
+1. Analysis was only done on 3 Lines; NYC MTA Subway has total 23 operational lines.
+2. Only scheduled maintenance for weekends were considered. Weekday maintenance and delay in service are still to be analyzed.
+3. Loss of riders are only analyzed at point of entry.
+
+Further, this we also need to take into account the taxi ridership data and relate it with the maintenance activities of MTA Subway.
 
