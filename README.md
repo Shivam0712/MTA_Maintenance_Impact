@@ -37,14 +37,16 @@ Essentially, as we are trying to study the impact in 106 stations on F, N and R 
 2. Data points comes from different periods of time which may not be stationary.
 To overcome these challenges we standardize the data by deducting the rolling mean and diviing by the rolling standard deviation.
 We conduct the Augmented Dickey-Fuller test which is a standard method to test the stationarity in time series data, on all the time series before and after the above standardization.
+<img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset2.PNG" align="center" border="1"/>
 
 ### Visual comparison of ridership on maintenance days and regular days
+<img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset3.PNG" align="center" border="1"/>
 
 ### Impact of maintenance on network of stations
 In essence, the MTA subway system is a network in which stations are nodes which connects to other nodes through subway lines which are the edges in the network. A maintenance activity impacts the ridership of a station by suspending its edges with other stations thus in turn impacting its connectivity with the network. The more the edges of a node are perturbed, the severe will be the impact. The stations which are in the middle of these sections lose more riders in comparison to those at the corners. Rather the riders of the intermediate stations, access the corner stations on maintenance day to avail the subway service. Thus, these corner stations although having maintenance, experience the normal or in some cases increased ridership. Therefore, the maintenance sample has further bifurcations as, station date combinations with general maintenance, and station date combinations with maintenance and entry gain(corner nodes).
 
 ### Independent samples T-test to compare different samples
-
+<img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset4.PNG" align="center" border="1"/>
 ### Quantifying the loss in ridership due to maintenance activities:
 
 ### Modelling the Data
@@ -61,6 +63,7 @@ For a regular day data point, the impact of maintenance features will be 0. This
 Thus our modelling objective is to model the maximum possible variation in the z-score using only maintenance features without overfitting. This modelled variation can be used as the impact of maintenance on subway ridership.
 
 ## Results
-
+<img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset5.PNG" align="center" border="1"/>
+<img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset6.PNG" align="center" border="1"/>
 ## Future Works
 
