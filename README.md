@@ -69,7 +69,8 @@ For a regular day data point, the impact of maintenance features will be 0. This
 
 Thus our modelling objective is to model the maximum possible variation in the z-score using only maintenance features without overfitting. This modelled variation can be used as the impact of maintenance on subway ridership.
 We use tree based decision models here:
-<img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset7.PNG" align="center" border="1"/>
+
+<img src="https://github.com/Shivam0712/MTA_Maintenance_Impact/blob/master/Assets/Asset9.PNG" align="center" border="1"/>
 
 ## Results
 **1. Overall in October 2017 to September 2018, there was a total loss of 1.45 Million riders on F, N and R lines just for the maintenance that occured on weekends.**
