@@ -21,6 +21,7 @@ Url : http://web.mta.info/developers/turnstile.html
 Url: https://www.mymtaalerts.com/messagearchive.aspx
 
 **3. NYC Subway GTFS static: This data provided the network of subway stations and routes. We have restricted the scope of the study and picked 106 stations which are served on F, N and R lines.** The reasons for this selection were, all these lines run between Brooklyn and Queens, for large sections of their routes they run parallel to each other, and 40% of maintenance activities in the past one year were conducted on these lines.
+<img src="Screen Shot 2018-09-26 at 1.14.09 PM.png" align="center" border="0" alt="Z = \frac{\mu_{pop} - \mu_{sample}}{\sigma / \sqrt{N}}" width="154" height="44"/>
 
 
 **4. TLC Trip Data:** The yellow and green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off  locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts.
